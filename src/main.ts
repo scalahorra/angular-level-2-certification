@@ -1,8 +1,8 @@
 import { bootstrapApplication } from '@angular/platform-browser';
 import { appConfig } from './app/app.config';
 import { AppComponent } from './app/app.component';
-import {setupWorker} from 'msw/browser';
-import {http, HttpResponse} from 'msw';
+import { setupWorker } from 'msw/browser';
+import { http, HttpResponse } from 'msw';
 
 const handlers = [
   http.get('/movies/:id', ({ params }) => {
@@ -215,6 +215,12 @@ const handlers = [
       }
     ]);
   }),
+  http.get('*', ({ request }) => {
+    if (request.url.startsWith('chrome-extension://')) {
+      console.log('Skip Chrome extension request');
+      return;
+    }
+  })
 ];
 
 setupWorker(...handlers).start()

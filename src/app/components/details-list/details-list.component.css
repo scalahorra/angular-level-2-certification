@@ -1,0 +1,19 @@
+.detail-table {
+  border-top: 1px solid #333333;
+}
+
+.row {
+  border-bottom: 1px solid #333333;
+}
+
+.row div {
+  padding: 20px;
+}
+
+.title-cell {
+  min-width: 130px;
+  display: flex;
+  flex-direction: row-reverse;
+  border-right: 1px solid #333333;
+  background-color: #1a1a1a;
+}

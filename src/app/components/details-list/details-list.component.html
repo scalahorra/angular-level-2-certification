@@ -1,0 +1,44 @@
+<h2>Details</h2>
+
+<div class="detail-table">
+  <div class="row">
+    <div class="title-cell">
+      <span>Box office</span>
+    </div>
+    <div>
+      <span>{{ movieDetail?.box_office | budget }}</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="title-cell">
+      <span>Budget</span>
+    </div>
+    <div>
+      <span>{{ movieDetail?.budget | budget }}</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="title-cell">
+      <span>Duration</span>
+    </div>
+    <div>
+      <span>{{ movieDetail?.duration | duration }}</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="title-cell">
+      <span>Producers</span>
+    </div>
+    <div>
+      <span>{{ movieDetail?.producers | join }}</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="title-cell">
+      <span>Cinematographers</span>
+    </div>
+    <div>
+      <span>{{ movieDetail?.cinematographers | join }}</span>
+    </div>
+  </div>
+</div>

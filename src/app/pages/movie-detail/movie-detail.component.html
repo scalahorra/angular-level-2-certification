@@ -1,0 +1,18 @@
+<div class="detail-page">
+  <div class="fill-space">
+    <!-- TODO Home icon -->
+    <button (click)="goToHome()">Back</button>
+  </div>
+
+  <div>
+    <h1>{{ movie?.title }}</h1>
+    <div class="flex">
+      <img class="poster" [src]="movie?.poster" [alt]="movie?.title">
+      <span class="summary-text"><strong>Summary:</strong> {{ movie?.summary }}</span>
+    </div>
+  </div>
+
+  <div class="fill-space">
+    <app-details-list [movieDetail]="movie"></app-details-list>
+  </div>
+</div>

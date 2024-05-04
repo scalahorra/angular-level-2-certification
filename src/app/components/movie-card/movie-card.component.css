@@ -1,0 +1,18 @@
+.movie-card {
+  width: 650px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #333333;
+}
+
+.subdetails {
+  min-width: max-content;
+  display: flex;
+  justify-content: space-between;
+}
+
+.subdetails span {
+  margin-right: 15px
+}

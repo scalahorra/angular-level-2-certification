@@ -1,0 +1,20 @@
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.filter-card {
+  width: 650px;
+  padding: 10px;
+  margin-bottom: 40px;
+  background-color: #1d1d1d;
+  border: 1px solid #333333;
+}
+
+.flex div span {
+  margin-right: 10px;
+}
+
+.title-filter {
+  margin-right: 30px;
+}

@@ -1,0 +1,13 @@
+<div class="filter-card">
+  <h3 class="title">Filters</h3>
+  <div class="flex">
+    <div class="title-filter">
+      <span>Title</span>
+      <input [(ngModel)]="filters.title" (ngModelChange)="onChange()" type="text">
+    </div>
+    <div>
+      <span>Release year</span>
+      <input [(ngModel)]="filters.year" (ngModelChange)="onChange()" type="number" min="0">
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+
+<div class="movie-list">
+  <app-filters (filtersChanged)="filtersChanged($event)"></app-filters>
+
+  <ng-container *ngIf="filteredMovies.length === 0">
+    <span>There are no movies with this information</span>
+  </ng-container>
+
+  <ng-container *ngFor="let movie of filteredMovies">
+    <app-movie-card [movie]="movie" (movieClicked)="goToDetail($event)"></app-movie-card>
+  </ng-container>
+</div>

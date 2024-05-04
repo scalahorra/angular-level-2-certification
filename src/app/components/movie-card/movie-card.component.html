@@ -1,0 +1,11 @@
+<div class="movie-card">
+  <div>
+    <h3 class="title">{{ movie?.title }}</h3>
+    <div class="subdetails">
+      <span>Release date: {{ movie?.release_date }}</span>
+      <span>Budget: {{ movie?.budget | budget }}</span>
+      <span>Duration: {{ movie?.duration | duration }}</span>
+    </div>
+  </div>
+  <button [id]="movie?.id" (click)="clickMovie()">Details</button>
+</div>

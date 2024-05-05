@@ -7,12 +7,12 @@
   border: 1px solid #333333;
 }
 
-.subdetails {
+.sub-details {
   min-width: max-content;
   display: flex;
   justify-content: space-between;
 }
 
-.subdetails span {
+.sub-details span {
   margin-right: 15px
 }

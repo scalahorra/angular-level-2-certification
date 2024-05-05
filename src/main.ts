@@ -217,7 +217,6 @@ const handlers = [
   }),
   http.get('*', ({ request }) => {
     if (request.url.startsWith('chrome-extension://')) {
-      console.log('Skip Chrome extension request');
       return;
     }
   })

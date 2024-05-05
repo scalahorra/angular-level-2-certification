@@ -1,11 +1,11 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { MoviesService } from '../../services/movies.service';
 import { CommonModule } from '@angular/common';
-import { MovieCardComponent } from "../../components/movie-card/movie-card.component";
-import { FiltersComponent } from '../../components/filters/filters.component';
-import { Movie } from '../../models/movie.model';
-import { Filters } from '../../models/filters.model';
 import { Subject, takeUntil } from 'rxjs';
+import { MoviesService } from '@services/movies.service';
+import { MovieCardComponent } from "@components/movie-card/movie-card.component";
+import { FiltersComponent } from '@components/filters/filters.component';
+import { Movie } from '@models/movie.model';
+import { Filters } from '@models/filters.model';
 import { Router } from '@angular/router';
 
 @Component({
@@ -56,7 +56,6 @@ export class HomeComponent implements OnInit, OnDestroy {
       const yearMatch = filters?.year ? movie.release_date.includes(filters?.year?.toString()) : true;
       return titleMatch && yearMatch;
     });
-    console.log(this.filteredMovies);
   }
 
   goToDetail(movieId: string): void {

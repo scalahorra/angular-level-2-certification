@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Filters } from '../../models/filters.model';
+import { Filters } from '@models/filters.model';
 
 @Component({
   selector: 'app-filters',

@@ -1,8 +1,8 @@
 import { Component, Input } from '@angular/core';
-import { MovieDetail } from '../../models/movieDetail.model';
-import { BudgetPipe } from '../../pipes/budget.pipe';
-import { DurationPipe } from '../../pipes/duration.pipe';
-import { JoinPipe } from '../../pipes/join.pipe';
+import { MovieDetail } from '@models/movieDetail.model';
+import { BudgetPipe } from '@pipes/budget.pipe';
+import { DurationPipe } from '@pipes/duration.pipe';
+import { JoinPipe } from '@pipes/join.pipe';
 
 @Component({
   selector: 'app-details-list',

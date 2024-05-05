@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { MoviesService } from '../../services/movies.service';
 import { ActivatedRoute, Router } from '@angular/router';
-import { MovieDetail } from '../../models/movieDetail.model';
 import { Subject, takeUntil } from 'rxjs';
-import { DetailsListComponent } from '../../components/details-list/details-list.component';
+import { MoviesService } from '@services/movies.service';
+import { DetailsListComponent } from '@components/details-list/details-list.component';
+import { MovieDetail } from '@models/movieDetail.model';
 
 @Component({
   selector: 'app-movie-detail',

@@ -56,7 +56,6 @@ export class HomeComponent implements OnInit, OnDestroy {
       const yearMatch = filters?.year ? movie.release_date.includes(filters?.year?.toString()) : true;
       return titleMatch && yearMatch;
     });
-    console.log(this.filteredMovies);
   }
 
   goToDetail(movieId: string): void {

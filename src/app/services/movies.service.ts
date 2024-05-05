@@ -3,12 +3,13 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Movie } from '../models/movie.model';
 import { MovieDetail } from '../models/movieDetail.model';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MoviesService {
-  private readonly URL = 'http://localhost:4200';
+  private URL = environment.apiUrl;
 
   constructor(private http: HttpClient) { }
 

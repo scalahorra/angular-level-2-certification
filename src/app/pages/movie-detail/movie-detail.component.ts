@@ -23,7 +23,6 @@ export class MovieDetailComponent implements OnInit {
     private router: Router,
     private moviesService: MoviesService
   ) {
-    // TODO Learn how to use ActivateRoute
     this.movieId = this.activatedRoute.snapshot.paramMap.get('movieId')!;
   }
 

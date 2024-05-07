@@ -47,10 +47,6 @@ export class HomeComponent implements OnInit, OnDestroy {
   }
 
   filtersChanged(filters: Filters): void {
-    if (filters?.title && filters?.year) {
-      this.filteredMovies = [...this.movies];
-    }
-
     this.filteredMovies = this.movies.filter(movie => {
       const titleMatch = filters?.title ? movie.title.toLowerCase().includes(filters?.title?.toLowerCase()) : true;
       const yearMatch = filters?.year ? movie.release_date.includes(filters?.year?.toString()) : true;

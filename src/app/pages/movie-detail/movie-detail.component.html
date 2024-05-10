@@ -1,4 +1,4 @@
-<div class="detail-page">
+<div *ngIf="movie" class="detail-page">
   <div class="fill-space">
     <button (click)="goToHome()" class="back-button">
       <span class="material-symbols-outlined">home</span>
@@ -7,14 +7,18 @@
   </div>
 
   <div>
-    <h1>{{ movie?.title }}</h1>
+    <h1>{{ movie.title }}</h1>
     <div class="flex">
-      <img class="poster" [src]="movie?.poster" [alt]="movie?.title">
-      <span class="summary-text"><strong>Summary:</strong> {{ movie?.summary }}</span>
+      <img class="poster" [src]="movie.poster" [alt]="movie.title">
+      <span class="summary-text"><strong>Summary:</strong> {{ movie.summary }}</span>
     </div>
   </div>
 
   <div class="fill-space">
     <app-details-list [movieDetail]="movie"></app-details-list>
   </div>
+</div>
+
+<div *ngIf="!movie" class="detail-page error">
+  <span>The movie doesn't exist</span>
 </div>

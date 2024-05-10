@@ -7,6 +7,10 @@
   margin: auto;
 }
 
+.error {
+  margin-top: 50vh;
+}
+
 .fill-space {
   width: 100%;
 }
